@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+:root {
+    --color-light: #ffffff;
+    --color-purple: #690747;
+    --color-green: #0c8216;
+    --color-black: #000000;
+    --color-gray: #1d1d1d;
+
+    --gradient-purple: linear-gradient(65deg,
+            hsl(0deg 0% 0%) 25%,
+            #5f053f8d 80%,
+            #810857 100%);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.custom-size {
+    width: 5rem;
+    height: 5rem;
+    padding-bottom: .5rem;
+}
+
+.custom-p {
+    padding: 7rem;
+}
+
+.navbar {
+    a:hover {
+        color: var(--color-purple);
+        transition: .4s;
+    }
+}
+
+.carousel {
+    img {
+        height: 90vh;
+    }
+}
+
+.storytelling {
+    min-height: 90vh;
+    background-image: var(--gradient-purple);
+    background-color: var(--color-gray);
+
+    img {
+        height: 80%;
+    }
+
+}
+
+/* cards */
+
+.cards {
+    h2 {
+        height: 10vh;
+    }
+}
+
+.bg-dark1 {
+    background-color: var(--color-black);
+}
+
+.card-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    padding: 0 3rem;
+}
+
+.card {
+    background-color: var(--color-black);
+    --bs-card-border-radius: 0;
+
+    h5 {
+        padding: 2rem;
+        color: var(--color-light);
+    }
+
+    img {
+        width: 40%;
+        transition: .5s;
+    }
+
+    img:hover {
+        transform: scale(1.1);
+        filter: drop-shadow(30px 20px 2px var(--color-purple));
+    }
+}
+
+/* grid */
+
+.contact {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+}
+
+.img-tam {
+    height: 50%;
+    width: 50%;
+
+}
+
+.custom-m {
+    margin-left: 5rem;
+}
+
+/* accordion */
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--color-black);
+}
+
+@media(width < 900px) {
+    .contact {
+        height: 100%;
+    }
+
+    .custom-m {
+        margin-left: auto;
+    }
+}
